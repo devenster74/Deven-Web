@@ -45,23 +45,13 @@ if setup2 == 2:
         [2] OS specifications""")
         specifications = int(input("[?]: "))
         if specifications == 1:
-            print("""           Device name	dev-computer
-            Processor	Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz   1.19 GHz
-            Installed RAM	8.00 GB (7.79 GB usable)
-            Device ID	16E68EAC-7ACE-4FAC-ADF9-42CD57F4E282
-            Product ID	00356-02306-43792-AAOEM
-            System type	64-bit operating system, x64-based processor
-            Pen and touch	No pen or touch input is available for this display""")
+            print("insert your information here")
         if specifications == 2:
-            print("""           Edition	Windows 11 Home
-            Version	21H2
-            Installed on 21/10/2021
-            OS build	22000.1098
-            Experience	Windows Feature Experience Pack 1000.22000.1098.0""")
+            print("insert your information here")
     if settings == 2:
         if name == 0:
-            print("Username: Deven")
-            print("Password: greenlamb07")
+            print("Username: (the main user)")
+            print("Password: (the main user's password)")
         else:
             print("Username:", name)
             print("Password:", password)
