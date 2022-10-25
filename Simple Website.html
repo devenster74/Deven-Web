@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('devenweb.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+<title>Deven.web</title>
+<link rel="stylesheet" type="text/css" href="format.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign in to deven.web</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.jpg" alt="Avatar" class="avatar" style="width:100px;height:100px">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="file:///C:/Users/nsetp/OneDrive/Desktop/school/Deven's%20HTML/forgot%20pass.html"</a></li>">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<h2 style="text-align: center">Deven.web</h2>
+<p style="text-align: center"><i>Search the web with Deven.web, fast, safe and easy</i></p>
+
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      October<br>
+      <span style="font-size:18px">2022</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays"> <!--Use Windows calendar so it looks neat-->
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> <!-- copy paste for updating the current day: <li><span class="active">date goes here</span></li>--> 
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li><span class="active">30</span></li>
+  <li>31</li>
+</ul> <!-- copy paste for updating the current day: <li><span class="active">date goes here</span></li>-->
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the web.." title="Type in something..">
+<p>Deven.web's top searches</p>
+<ul id="myUL">
+  <li><a href="https://www.google.com/">Google.com</a></li>
+  <li><a href="https://www.youtube.com/">Youtube</a></li>
+  <li><a href="https://sites.google.com/site/unblockedgamessms6969/">Unblocked Games</li>
+  <li><a href="https://www.google.com/search?q=games&source=lmns&bih=746&biw=1536&rlz=1C1CHZN_enBH951BH951&hl=en&sa=X&ved=2ahUKEwiCso-_5f70AhU2gc4BHRp0A88Q_AUoAHoECAEQAA">Games</a></li>  
+  <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+  <li><a href="https://www.spotify.com/">Spotify: listen to music</a></li>
+
+  <li><a href="https://www.google.com/search?q=what%27s+the+weather&rlz=1C1CHZN_enBH951BH951&oq=what%27s+the+weather&aqs=chrome..69i57j0i512j0i10i512j46i512j0i512j46i395i419i424i512j0i395i512l3j46i395i512.2649j1j7&sourceid=chrome&ie=UTF-8">Weather</a></li>
+  <li><a href="https://www.google.com/search?q=what+is+my+ip%3F&rlz=1C1CHZN_enBH951BH951&oq=what+is+my+ip&aqs=chrome.0.69i59j69i57j0i512l2j0i10i512j0i512l5.2141j0j7&sourceid=chrome&ie=UTF-8">What is my IP?</a></li>
+  <li><a href="https://www.gmail.com/">Gmail</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<p style="text-align:center">Shortcuts</p>
+<img src="store.jpg" style="width:600px;height:0px">
+<a href="https://chrome.google.com/webstore/category/extensions?hl=en"><img src="store.jpg" alt="image redirects you to the chrome web store" style="width:100px;height:100px;"></a>
+<a href="https://classroom.google.com/"><img src="classroom.jpg" alt="image redirects you to classroom.google.com" style="width:100px;height:100px;"></a>
+<img src="add.jpg" style="width:100px;height:100px">
+
+<p>Using deven.web on chrome? Visit the chrome web store add new features to chrome by installing extensions from the chrome webstore.</p>
+<a href="https://chrome.google.com/webstore/category/extensions?hl=en"><img src="store.jpg" alt="image redirects you to the chrome web store" style="width:100px;height:100px;"></a>
+
+<p>Feel bored? click the GIF image below to play a game by Deven!</p>
+<a href="flappy bird.html"><img src="flappy.gif" alt="image redirects you to a game" style="width:60px;height:60px;"></a>
+
+<h3>FAQ</h3>
+<p><b>What is deven.web?</b><br>
+deven.web is a website made by Deven S. We partner with google as our search engine.</p>
+
+<p><b>Is deven.web SAFE?</b><br>
+Yes, it is indeed safe. Our motto: Search the web fast, safe and easy.</p>
+
+<p><b>What does deven.web use?</b><br>
+deven.web uses HTML, CSS and JavaScript. We use one of the most popular search engines, google, making deven.web a safe website to use for free.</p>
+
+<p><b>I've found a bug with deven.web..</b><br>
+Found a bug with deven.web? Do not hesitate to contact the developer at deven.setpal@student.thebsbh.com OR email privately by devensets31@gmail.com.</p>
+
+<p><b>Can we suggest anything to add to deven.web?</b><br>
+Affirmative, feel free to suggest anything to the developer at deven.setpal@student.thebsbh.com OR email privately by devensets31@gmail.com</p>
+
+</body>
+</html>
