@@ -13,7 +13,6 @@ h2 {
 	color:blue;
 }
 
-<style>
 * {
   box-sizing: border-box;
 }
@@ -49,4 +48,3 @@ h2 {
 #myUL li a:hover:not(.header) {
   background-color: #eee;
 }
-</style>
