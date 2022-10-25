@@ -4,8 +4,8 @@ A simple Operating System, featuring a browser: HTML, JavaScript, CSS and Python
 Some notes:
 
 - To get the PyQt5 libraries: Follow these steps.
-  win + r
-  type in cmd
+  win + r,
+  type in cmd,
   in the command prompt type in pip install pyqt5
 
 - For the calendar in the HTML, you will need to update it everyday.
