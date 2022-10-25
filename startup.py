@@ -8,7 +8,7 @@ print("""
 ██████╔╝███████╗░░╚██╔╝░░███████╗██║░╚███║  ╚█████╔╝██████╔╝
 ╚═════╝░╚══════╝░░░╚═╝░░░╚══════╝╚═╝░░╚══╝  ░╚════╝░╚═════╝░""")
 print("""
-[1] Use previous login
+[1] Use main login
 [2] Login with a new user""")
 setup = int(input("[?]: "))
 if setup == 1:
