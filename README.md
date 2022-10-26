@@ -10,6 +10,8 @@ Order:
 
 Some notes:
 
+- You can change the browser however you want, change the images, layout, etc. What I've done is just an example.
+
 - To get the PyQt5 libraries: Follow these steps.
   win + r,
   type in cmd,
