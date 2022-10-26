@@ -14,4 +14,4 @@ Some notes:
 
 - Download images along with the source code.
   
-- You don't need to do the startup.py part, startup.py is the simple OS and is not required for browser.py to run.
+- You don't need to do the startup.py part, startup.py is a simple OS like program that uses the browser and is not required for browser.py to run.
