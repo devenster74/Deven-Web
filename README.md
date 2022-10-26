@@ -10,7 +10,7 @@ Some notes:
 
 - For the calendar in the HTML, you will need to update it everyday. Line 294: <ul class="days"> <!-- copy paste for updating the current day: <li><span class="active">date goes here</span></li>--> 
 
-- You will need to change these parts in browser.py to your own file location: Line 23 and Line 119
+- You will need to change these parts in browser.py to your own file location: Line 13 and Line 54
 
 - Download images along with the source code.
   
