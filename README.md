@@ -8,7 +8,7 @@ Some notes:
   type in cmd,
   in the command prompt type in pip install pyqt5
 
-- For the calendar in the HTML, you will need to update it everyday. Line 294: <ul class="days"> <!-- copy paste for updating the current day: <li><span class="active">date goes here</span></li>--> 
+- For the calendar in the HTML, you will need to update it everyday. Line 294.
 
 - You will need to change these parts in browser.py to your own file location: Line 13 and Line 54
 
