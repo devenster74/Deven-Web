@@ -1,5 +1,11 @@
 # Deven-Web
-A simple Operating System, featuring a browser: HTML, JavaScript, CSS and Python
+A simple program, featuring a browser: HTML, JavaScript, CSS and Python
+
+Order:
+
+1. Make the HTML (Simple Website.html)
+2. Make the browser (browser.py)
+3. [optional] Make the program that operates and uses your browser. (startup.py)
 
 Some notes:
 
