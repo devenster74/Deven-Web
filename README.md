@@ -4,8 +4,9 @@ A simple program, featuring a browser: HTML, JavaScript, CSS and Python
 Order:
 
 1. Make the HTML (which is your home page for your browser): (Simple Website.html)
-2. Make the browser: (browser.py)
-3. [optional] Make the program that operates and uses your browser: (startup.py)
+2. Make the offline game playable on your browser: (flappy bird.html)
+3. Make the browser: (browser.py)
+4. [optional] Make the program that operates and uses your browser: (startup.py)
 
 Some notes:
 
