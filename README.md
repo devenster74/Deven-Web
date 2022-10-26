@@ -3,9 +3,9 @@ A simple program, featuring a browser: HTML, JavaScript, CSS and Python
 
 Order:
 
-1. Make the HTML (Simple Website.html)
-2. Make the browser (browser.py)
-3. [optional] Make the program that operates and uses your browser. (startup.py)
+1. Make the HTML (which is your home page for your browser): (Simple Website.html)
+2. Make the browser: (browser.py)
+3. [optional] Make the program that operates and uses your browser: (startup.py)
 
 Some notes:
 
